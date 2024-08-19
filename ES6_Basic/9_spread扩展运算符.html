@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='UTF-8' />
+    <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // ... 扩展运算符能将数组转换为逗号分隔的参数序列
+            const tfBoys = ['a', 'b', 'c']
+            // => a, b, c
+
+            function chunwan(){
+                console.log(arguments);
+            }
+
+            chunwan(...tfBoys);
+        </script>
+    </body>
+</html>

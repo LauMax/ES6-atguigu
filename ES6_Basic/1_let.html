@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='UTF-8' />
+    <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //声明变量
+            let a;
+            let b,c,d;
+
+            // 1. 变量不能重复声明
+            // let star = 'a'
+            // let star = 'b'
+            
+            // 2. 块级作用域 全局，函数，eval
+            {
+                let girl = 'a'
+            }
+            console.log(girl); // undefined
+
+            //3. 不存在变量提升
+            console.log(song); // undefined
+            var song = 'abc'
+            // let song = 'abc' // 会报错
+
+            // 4. 不影响作用域链
+            {
+                let school = 'atguigu'
+                function fn(){
+                    console.log(school);
+                }
+                fn();
+            }
+
+        </script>
+    </body>
+</html>
